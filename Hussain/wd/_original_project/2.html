@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <title>Akash Devganiya</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 120px;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, hsl(0, 0%, 100%), hsl(198, 100%, 85%), hsl(0, 0%, 100%));
+      color: #000;
+      line-height: 1.6;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    header {
+      background-color: #000;
+      padding: 20px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 24px;
+      font-weight: bold;
+      gap: 10px;
+      color: #fff;
+      font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    }
+
+    .logo img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 3px solid #000;
+      object-fit: cover;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .logo a {
+      font-size: 14px;
+      text-decoration: none;
+      color: #00c3ff;
+      font-weight: normal;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      margin-left: 20px;
+      font-weight: 500;
+      font-size: 16px;
+      transition: all 0.3s;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    nav a:hover {
+      color: hsl(198, 100%, 85%);
+      border-bottom: 2px solid #00c3ff;
+      padding-bottom: 3px;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 80px 20px;
+      text-align: center;
+      min-height: 100vh;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 20px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .hero .button {
+      padding: 12px 25px;
+      background-color: #000;
+      color: #fff;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .hero .button:hover {
+      background-color: #00c3ff;
+      transform: scale(1.05);
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 960px;
+      margin: auto;
+      text-align: center;
+      min-height: 100vh;
+    }
+
+    section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #000;
+      border-bottom: 2px solid #fff;
+      display: inline-block;
+      padding-bottom: 6px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    section p {
+      font-size: 18px;
+      color: #000;
+      margin-bottom: 30px;
+    }
+
+    footer {
+      background-color: #000;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      border-top: 1px solid #ccc;
+      font-family: 'Fira Code', monospace;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 15px 20px;
+        justify-content: center;
+      }
+
+      .logo {
+        font-size: 18px;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .logo img {
+        width: 60px;
+        height: 60px;
+      }
+
+      nav {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      nav a {
+        font-size: 14px;
+        margin: 10px;
+      }
+
+      .hero h1 {
+        font-size: 28px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      section h2 {
+        font-size: 24px;
+      }
+
+      section p {
+        font-size: 16px;
+      }
+
+      .hero .button {
+        font-size: 14px;
+        padding: 10px 20px;
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(100px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in {
+      animation: fadeIn 1.5s;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="akash.jpeg" alt="Akash (Image Not Found)" />
+      Akash Devganiya
+      <a href="resume.pdf" target="_blank">View Resume</a>
+    </div>
+    <nav>
+      <a href="web.home.html">HOME</a>
+      <a href="web.about.html">ABOUT</a>
+      <a href="web.info.html">INFO</a>
+      <a href="web.contact.html">CONTACT</a>
+    </nav>
+  </header>
+
+  <section class="hero fade-in" id="HOME">
+    <h1>Hi, I'm Akash Devganiya</h1>
+    <p>Web Developer | Application Developer | Cyber Security Enthusiast</p>
+    <p>
+      I’m passionate about building modern, responsive, and user-friendly web and mobile applications.
+      With a strong foundation in cybersecurity, I ensure my projects are not only beautiful but also secure.
+      I love learning new technologies and applying them to solve real-world problems.
+    </p>
+    <a class="button" href="web.hire.html">Hire Me</a>
+  </section>
+
+  <section class="hero fade-in" id="ABOUT">
+    <h2><i class="fas fa-user-circle"></i> About Me</h2>
+    <p>
+      I'm Akash, a passionate diploma student pursuing Information Technology at Uka Tarsadia University.
+      I love building websites, exploring cybersecurity, and continuously learning new skills.<br><br>
+      "Seeking a challenging entry-level position in an IT company where I can apply my strong analytical
+      and problem-solving skills, while gaining practical experience and contributing to the company's growth."
+    </p>
+    <a href="web.about.html">More Details</a>
+  </section>
+
+  <section class="fade-in">
+    <h2><i class="fas fa-user-circle"></i> Personal Details</h2>
+    <div class="info">
+      <p>Full Name: Akash Devganiya</p>
+      <p>Date of Birth: 20th December 2007</p>
+      <p>Gender: Male</p>
+      <p>Marital Status: Single</p>
+      <p>Nationality: Indian</p>
+      <a href="web.info.html">More Details</a>
+    </div>
+  </section>
+
+  <section class="hero fade-in" id="CONTACT">
+    <h2><i class="fas fa-address-book"></i>Contact Me</h2>
+    <p>
+      <strong>Email:</strong> akashdevganiya5@gmail.com<br />
+      <strong>Phone:</strong> 9714087287<br />
+      <strong>Location:</strong> Surat, Gujarat
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Akash Devganiya. All rights reserved.</p>
+  </footer>
+</body>
+</html>

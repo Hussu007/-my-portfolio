@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akash Devganiya Resume</title>
+  <style>
+    :root {
+      --page-width: 210mm;
+      --page-height: 297mm;
+      --ink: #20242a;
+      --muted: #5f6875;
+      --accent: #1f4e79;
+      --line: #d9dee7;
+    }
+
+    * {
+      box-sizing: border-box;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    html,
+    body {
+      margin: 0;
+      width: 100%;
+      min-height: 100%;
+      background: #f1f3f6;
+      color: var(--ink);
+      font-family: Arial, "Segoe UI", sans-serif;
+    }
+
+    .page {
+      width: var(--page-width);
+      height: var(--page-height);
+      margin: 18px auto;
+      padding: 18mm 16mm;
+      overflow: hidden;
+      background: #ffffff;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    .header {
+      padding-bottom: 14px;
+      margin-bottom: 18px;
+      text-align: center;
+      border-bottom: 2px solid var(--accent);
+    }
+
+    h1 {
+      margin: 0 0 6px;
+      font-size: 30px;
+      color: var(--accent);
+      letter-spacing: 0.5px;
+    }
+
+    .headline {
+      margin: 0 0 8px;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--muted);
+      letter-spacing: 1px;
+    }
+
+    .contact-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 6px 16px;
+      font-size: 12.5px;
+    }
+
+    .section {
+      margin-bottom: 15px;
+    }
+
+    .section-title {
+      margin: 0 0 8px;
+      padding-bottom: 4px;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--accent);
+      border-bottom: 1px solid var(--line);
+      letter-spacing: 0.8px;
+    }
+
+    p {
+      margin: 0 0 7px;
+      font-size: 12.5px;
+      line-height: 1.45;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    li {
+      margin-bottom: 5px;
+      font-size: 12.5px;
+      line-height: 1.4;
+    }
+
+    .entry {
+      margin-bottom: 11px;
+    }
+
+    .entry-title {
+      margin: 0 0 3px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .entry-subtitle {
+      margin: 0 0 5px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .details-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 4px 20px;
+    }
+
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    @media print {
+      html,
+      body {
+        width: 210mm;
+        height: 297mm;
+        background: #ffffff;
+      }
+
+      .page {
+        width: 210mm;
+        height: 297mm;
+        margin: 0;
+        padding: 18mm 16mm;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <h1>Akash Devganiya</h1>
+      <p class="headline">Diploma IT Student | IT Infrastructure & Web Development Basics</p>
+      <div class="contact-row">
+        <span>Surat, Gujarat</span>
+        <span>9714087287</span>
+        <span>akashdevganiya5@gmail.com</span>
+      </div>
+    </header>
+
+    <section class="section">
+      <h2 class="section-title">Career Objective</h2>
+      <p>
+        To begin my career in the IT industry as a committed diploma graduate,
+        where I can build strong technical, infrastructure, and professional skills
+        while contributing with discipline, responsibility, and a continuous
+        learning attitude.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Profile Summary</h2>
+      <p>
+        Information Technology diploma student with practical exposure to web
+        technologies, database-driven applications, and basic computer operations.
+        Interested in IT infrastructure, technical support, troubleshooting, and
+        enterprise technology services. Quick learner with good communication,
+        teamwork, documentation, and problem-solving skills.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Education</h2>
+      <div class="entry">
+        <p class="entry-title">Uka Tarsadia University</p>
+        <p class="entry-subtitle">Diploma in Information Technology | 2023 - 2026 | Pursuing</p>
+      </div>
+      <div class="entry">
+        <p class="entry-title">Suman High School No-3</p>
+        <p class="entry-subtitle">SSC Board 10th | 72.68%</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Technical Skills</h2>
+      <p><strong>Web Technologies:</strong> HTML, CSS, JavaScript, PHP</p>
+      <p><strong>Database:</strong> MySQL, basic database record management</p>
+      <p><strong>IT Fundamentals:</strong> Basic computer operations, troubleshooting mindset, interest in IT infrastructure</p>
+      <p><strong>Tools:</strong> MS Office, internet applications, documentation</p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Core Competencies</h2>
+      <p>Logical thinking, technical learning ability, communication, teamwork, time management, discipline, adaptability, attention to detail</p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Project</h2>
+      <div class="entry">
+        <p class="entry-title">E-Voting System</p>
+        <ul>
+          <li>Developed a web-based academic project to manage voter registration, voting workflow, and record handling.</li>
+          <li>Created structured frontend pages using HTML, CSS, and JavaScript for a clear user experience.</li>
+          <li>Implemented backend functionality with PHP and MySQL to store, retrieve, and manage voter information.</li>
+          <li>Applied form handling, database connectivity, and organized record management concepts.</li>
+          <li>Improved understanding of real-world application flow, data accuracy, and user-friendly design.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Internship</h2>
+      <div class="entry">
+        <p class="entry-title">Web Designing Internship</p>
+        <p class="entry-subtitle">5 Weeks</p>
+        <ul>
+          <li>Designed and improved webpage layouts using HTML, CSS, and basic JavaScript concepts.</li>
+          <li>Worked on styling, spacing, alignment, content structure, and responsive design basics.</li>
+          <li>Followed instructions, completed assigned tasks, and improved professional work discipline.</li>
+          <li>Strengthened practical understanding of frontend development and client-facing webpage presentation.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Career Readiness</h2>
+      <p>
+        Willing to learn IT infrastructure management, work in a professional
+        corporate environment, improve communication and technical skills, and grow
+        through training, practical work experience, and continuous improvement.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Personal Details</h2>
+      <div class="details-grid">
+        <p><strong>Date of Birth:</strong> 20/12/2007</p>
+        <p><strong>Gender:</strong> Male</p>
+        <p><strong>Marital Status:</strong> Single</p>
+        <p><strong>Nationality:</strong> Indian</p>
+        <p><strong>Languages:</strong> English, Hindi, Gujarati</p>
+        <p><strong>Interests:</strong> Web Development, Application Development, Cyber Security</p>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
